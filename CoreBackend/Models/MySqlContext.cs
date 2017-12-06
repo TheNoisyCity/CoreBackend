@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace CoreBackend.Models
 {
-    public partial class noisycityContext : DbContext
+    public partial class MySqlContext : DbContext
     {
         public virtual DbSet<Comment> Comment { get; set; }
         public virtual DbSet<Hark> Hark { get; set; }
