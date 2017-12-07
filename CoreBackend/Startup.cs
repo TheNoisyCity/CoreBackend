@@ -35,6 +35,10 @@ namespace CoreBackend
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseStatusCodePagesWithRedirects("/error/{0}");
+            }
 
             app.UseMvc();
         }
